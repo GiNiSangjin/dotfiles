@@ -18,3 +18,9 @@ cp -r custom/themes/* ~/.oh-my-zsh/custom/themes/
 
 echo "✅ All done! Run 'source ~/.zshrc' to apply your settings."
 
+echo "🧠 Installing zsh-syntax-highlighting plugin..."
+if [ ! -d "$HOME/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting" ]; then
+  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git \
+    ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
+fi
+
